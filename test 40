@@ -1,0 +1,35 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void){
+
+    int years = 0;
+    printf("year of birthday:");
+    scanf("%i", &years);
+    years = 2019 - years;
+
+    if(years >= 118){
+        printf("GOD: %i years \n", years);
+    }
+    else if (years <=3)
+    {
+        printf("Baby, %i years\n", years);
+    }
+    else if(years > 3 && years <= 18)
+    {
+        printf("Younger, %i years\n", years);
+    }
+    else if(years >= 19 && years <= 49)
+    {
+        printf("Middle, %i years\n", years);
+    }
+    else if(years >= 50 && years <= 89)
+    {
+        printf("Older, %i years\n", years);
+    }
+    else if(years >= 90 && years <= 117)
+    {
+        printf("You are SuperMan, %i years\n", years);
+    }
+
+}\
